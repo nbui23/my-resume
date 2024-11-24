@@ -1,73 +1,78 @@
 \documentclass[letterpaper,11pt]{article}
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+% Page Layout
 \usepackage[top=0.75in, bottom=0.25in, left=0.75in, right=0.75in]{geometry}
-
-\usepackage{latexsym}
-
-\usepackage{titlesec}
-\usepackage{marvosym}
-\usepackage[usenames,dvipsnames]{color}
-\usepackage{verbatim}
-\usepackage{enumitem}
-\usepackage[hidelinks]{hyperref}
 \usepackage{fancyhdr}
+
+% Font and Language
+\usepackage[sfdefault]{noto}
 \usepackage[english]{babel}
-\usepackage{tabularx}
 \input{glyphtounicode}
 
+% Formatting and Styling
+\usepackage{titlesec}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{enumitem}
+\usepackage{tabularx}
+\usepackage{graphicx}
+\usepackage{latexsym}
+\usepackage{marvosym}
+\usepackage{verbatim}
+\usepackage[hidelinks]{hyperref}
 
-%----------FONT OPTIONS----------
-% sans-serif
-% \usepackage[sfdefault]{FiraSans}
-% \usepackage[sfdefault]{roboto}
-% \usepackage[sfdefault]{noto-sans}
-\usepackage[sfdefault]{noto}
-% \usepackage[default]{sourcesanspro}
+%----------------------------------------------------------------------------------------
+%	PAGE LAYOUT SETTINGS
+%----------------------------------------------------------------------------------------
 
-% serif
-% \usepackage{CormorantGaramond}
-% \usepackage{charter}
-
-
+% Header and Footer
 \pagestyle{fancy}
-\fancyhf{} % clear all header and footer fields
+\fancyhf{}
 \fancyfoot{}
 \renewcommand{\headrulewidth}{0pt}
 \renewcommand{\footrulewidth}{0pt}
 
-% Adjust margins
+% Margins
 \addtolength{\oddsidemargin}{-0.5in}
 \addtolength{\evensidemargin}{-0.5in}
 \addtolength{\textwidth}{1in}
 \addtolength{\topmargin}{-.5in}
 \addtolength{\textheight}{1.0in}
 
+% General Settings
 \urlstyle{same}
-
 \raggedbottom
 \raggedright
 \setlength{\tabcolsep}{0in}
+\pdfgentounicode=1
+
+%----------------------------------------------------------------------------------------
+%	CUSTOM COMMANDS
+%----------------------------------------------------------------------------------------
 
 % Sections formatting
 \titleformat{\section}{
   \vspace{-9pt}\scshape\raggedright\large
 }{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
 
-% Ensure that generate pdf is machine readable/ATS parsable
-\pdfgentounicode=1
-
-%-------------------------
-% Custom commands
+% Resume Items
 \newcommand{\resumeItem}[1]{
   \item\small{
-    {#1 \vspace{-2.75pt}}
+    {#1 \vspace{-3.3pt}}
   }
 }
 
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+% Resume Headings
 \newcommand{\resumeSubheading}[3]{
     \item
     \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
-      \textbf{#1} \textbar \textit{ #2} & #3 \\
-    \end{tabular*}\vspace{-8pt}
+      \textbf{#1} $|$ \textit{ #2} & #3 \\
+    \end{tabular*}\vspace{-8.5pt}
 }
 
 \newcommand{\resumeSubSubheading}[2]{
@@ -84,41 +89,36 @@
     \end{tabular*}\vspace{-7pt}
 }
 
-\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
-
-\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
-
+% List Environments
 \newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
 \newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
 \newcommand{\resumeItemListStart}{\begin{itemize}}
 \newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
 
-%-------------------------------------------
-%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
 
+%----------------------------------------------------------------------------------------
+%	RESUME CONTENT
+%----------------------------------------------------------------------------------------
 
 \begin{document}
 
-%----------HEADING----------
-% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
-%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
-%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
-% \end{tabular*}
-
+% Header
 \begin{center}
     {\textbf{\Large NORMAN BUI}} \\ \vspace{1pt}
     \small +1 613-983-3217 $|$
-    \href{mailto:normanbui@cmail.carleton.ca}{{normanbui@cmail.carleton.ca}} $|$
+    \href{mailto:normanbui@cmail.carleton.ca}{normanbui@cmail.carleton.ca} $|$
     \href{https://www.linkedin.com/in/normanbui23/}{{linkedin.com/in/normanbui23}} $|$
     \href{https://github.com/nbui23}{{github.com/nbui23}}
-    % \href{https://devpost.com/normanbui23}{\underline{devpost.com/normanbui23}}
 \end{center}
 
-%-----------EDUCATION-----------
+% Education Section
 \section{\textbf{\Large Education}}
   \resumeSubHeadingListStart
-    \resumeSubheading
-    {Carleton University}{Bachelor of Computer Science (Honours), \textbf{3.9/4.0 (A) GPA}}{{Expected April 2026}}
+  \resumeSubheading
+  {Carleton University}
+  {Bachelor of Computer Science (Honours), \textbf{3.9/4.0 (A) GPA}}
+  {Expected April 2026}
       \resumeItemListStart
         % \resumeItem{Specializaton in Software Engineering and Minor in Forensic Psychology}
         % \resumeItem{Awards: Deans' Honour List, President's Scholars, Chalmers Jack Mackenzie, and Henry Marshall Tory Scholarships}
@@ -126,7 +126,7 @@
       \resumeItemListEnd
   \resumeSubHeadingListEnd
 
-%-----------EXPERIENCE-----------
+% Experience Section
 \section{\textbf{\Large Experience}}
   \resumeSubHeadingListStart
     \resumeSubheading{Autodesk}{Incoming Software Developer Intern - Java, TypeScript, GraphQL}{Jan 2025}
@@ -136,39 +136,39 @@
 
     \resumeSubheading{Public Health Agency of Canada}{Junior Data Scientist - Python, LLM, MDM}{Sep 2024 - Present}
       \resumeItemListStart
-        \resumeItem{Researching, implementing, and optimizing LLMs for automating literature reviews in epidemiological research, as part of a Master Data Management system with the World Health Organization and Imperial College London}
+        \resumeItem{Developing LLM-powered Master Data Management system with Imperial College London and WHO, automating epidemiological literature reviews and enabling standardized research access across global health initiatives}
       \resumeItemListEnd
 
     \resumeSubheading{Kongsberg Geospatial}{Software Engineer Intern - C++, Qt, Python, GIS}{May 2024 - Aug 2024}
       \resumeItemListStart
-        \resumeItem{Designed and built GIS apps with the TerraLens SDK for ATC applications as part of the Solutions Engineering team}
-        \resumeItem{Aggregated various VFR and terrain data sources using Python scripting, reducing processing time \textbf{by 40\%}}
-        \resumeItem{Implemented advanced map rendering (LiDAR, WMTS, S-57) and object tracking in 2D and 3D, performance visualizations (FPS, CPU, GPU, RAM), and modernized UI in Qt, contributing to the acquisition of funding and clients}
-        \resumeItem{Developed a Python script to process ATC software's logs, reducing processing time by \textbf{over 99\%}}
+        \resumeItem{Pioneered establishment of Solutions Engineering team as a founding software engineer, developing demos using TerraLens SDK, resulting in successful solution delivery to various major aviation, defence, and government clients}
+        \resumeItem{Integrated LiDAR, WMTS, and S-57 data and optimized render pipeline to achieve \textbf{consistent 60+ FPS} with real-time object tracking, while implementing system monitoring (GPU, CPU, RAM) and modernizing Qt UI/UX}
+        \resumeItem{Developed automated airspace classification framework for North American and Australian regions, removing manual processing and standardizing data categorization}
+        \resumeItem{Automated VFR and terrain data processing workflows, reducing aggregating time by more than \textbf{40\%}}
       \resumeItemListEnd
 
     \resumeSubheading{Health Canada}{Data Scientist Intern - Python, ML, NLP, ETL}{Sep 2023 - Dec 2023}
       \resumeItemListStart
         \resumeItem{Developed Python solutions for chemical assessment, leading to improved risk data aggregation and analysis}
         \resumeItem{Built random forest classifiers with pandas, NumPy, SciPy, and scikit-learn to accurately predict chemical toxicity}
-        \resumeItem{Rebuilt organization-wide federated chemical search system using BeautifulSoup4 and lxml, implementing session management, automatic retries, and dynamic rate limiting, restoring data source coverage from \textbf{47\% to 100\%}}
-        \resumeItem{Developed standardized API templates and established test-driven development practices using unittest framework, resulting in \textbf{100\% test coverage} and streamlined integration of new chemical data sources}
-        \resumeItem{Developed automated workflow for extracting semantic triples from scientific articles using CoreNLP and Stanza, streamlining the collection, organization, browsing of qualitative data into a Neo4J knowledge graph}
+        \resumeItem{Rebuilt organization-wide federated chemical search system using BeautifulSoup4 and lxml, implementing automated fault tolerance and rate limiting that increased query success rate by \textbf{20\%}}
+        \resumeItem{Architected scalable API templates and implemented test-driven development practices using unittest framework, restoring chemical data source integration capability \textbf{by 113\%} and achieving \textbf{100\% test coverage}}
+        \resumeItem{Engineered automated knowledge graph pipeline using Neo4j, CoreNLP, and Stanza to extract semantic triples from medical literature, reducing qualitative data processing time and work}
       \resumeItemListEnd
 
-    \resumeSubheading{Department of National Defence}{Junior Software Engineer - Python, LLM, RAG}{Jun 2023 - Nov 2023}
+    \resumeSubheading{Department of National Defence}{Junior AI/ML Engineer - Python, LLM, RAG}{Jun 2023 - Nov 2023}
       \resumeItemListStart
-        \resumeItem{Built a RAG app with Flask and GPT-3.5 to simulate conversation with a database of \textbf{20+ tax documents}}
-        \resumeItem{Implemented a NLP pipeline with tokenization, context analysis, and named entity recognition using NLTK}
-        \resumeItem{Leveraged SQLite3 and FAISS for efficient storage and embedding retrieval, enabling fast response times}
+        \resumeItem{Built conversational AI system using GPT-3.5 and FLask, implementing RAG architecture to enable intelligent querying across \textbf{20+ tax documents}}
+        \resumeItem{Developed NLP pipeline using NLTK, integrating tokenization, contextual analysis, and NER to enahance text understanding and information extraction accuracy}
+        \resumeItem{Architected vector search system using FAISS and SQLite3, optimizing embeddeing storage and retrieval for real-time query responses}
       \resumeItemListEnd
 
     \resumeSubheading{NAV CANADA}{Software Engineer Intern - C++, Qt, PowerShell, GIS}{May 2023 - Aug 2023}
       \resumeItemListStart
         \resumeItem{Developed C++ solutions for various ATC applications, resulting in improved performance and reliability}
         \resumeItem{Optimized data management algorithm for internal data tool, resulting in a \textbf{60\% decrease} in storage utilization and \textbf{30\% boost} in automated data analysis performance}
-        \resumeItem{Optimized code and resolved multiple bugs in ATC software, achieving a \textbf{16\% improvement} in frame rate}
-        \resumeItem{Automated network configurations using PowerShell, reducing manual work and setup time by \textbf{more than 95\%}}
+        \resumeItem{Resolved multiple bugs in ATC software, achieving an overall \textbf{improvement of 16\% } in frame rate}
+        \resumeItem{Automated network configurations with PowerShell, reducing manual work and setup time by \textbf{more than 95\%}}
       \resumeItemListEnd
 
     % \resumeSubheading
@@ -182,43 +182,43 @@
 
     \resumeSubHeadingListEnd
 
-%-----------PROJECTS-----------
-\section{\textbf{\Large Research \& Projects}}
+% Projects Section
+\section{\textbf{\Large Projects}}
     \resumeSubHeadingListStart
 
-        \resumeSubheading{Obscure Language RAG Systems}{Python, RAG, LangChain, FAISS, Sentence Transformers}{\href{https://github.com/nbui23/factor_assistant}{\underline{GitHub}}}
+        \resumeSubheading{Obscure Language RAG Systems}{Python, RAG, LangChain, FAISS, Sentence Transformers}{\href{https://github.com/nbui23/factor_assistant}{\includegraphics[height=0.37cm]{logos/github.png}}}
             \resumeItemListStart
                 \resumeItem{Researched and developed RAG systems to answer obscure programming language queries @ Bedarra Corporation}
             \resumeItemListEnd
 
-        \resumeSubheading{SocialSaplings}{HTML/SCSS, JavaScript, Bootstrap, Node.js, Express.js, Firebase (Firestore, Auth)}{\href{https://devpost.com/software/socialsaplings}{\underline{Devpost}}}
+        \resumeSubheading{SocialSaplings}{HTML/SCSS, JavaScript, Bootstrap, Node.js, Express.js, Firebase (Firestore, Auth)}{\href{https://devpost.com/software/socialsaplings}{\includegraphics[height=0.37cm]{logos/devpost.png}}}
             \resumeItemListStart
-                \resumeItem{Led the development of a reforestation web platform, securing \textbf{1st place overall} at KuriusHacks: March Edition}
+                \resumeItem{Led cross-functional team to build a reforestation platform, resulting in \textbf{1st place at KuriusHacks} out of 15 teams}
                 % \resumeItem{Implemented a tool using GBIF, SoilGrids, Open-Elevation, and OpenWeatherMap to recommend optimal tree species based on a user's geodata.}
-                \resumeItem{Implemented a tool using various APIs to recommend optimal tree species based on a user's geodata}
-                \resumeItem{Developed a tree planting visualization tool with Google Maps API to showcase global reforestation impact}
+                \resumeItem{Built tree species recommendation algorithm integrating various APIs to analyze user geodata for optimal planting}
+                \resumeItem{Developed an interactive visualization dashboard using the Google Maps API to display real-time reforestation metrics and global environmental impact data}
                 % \resumeItem{Added profiles, posts, likes, and comments, using Firebase for data management and authentication}
             \resumeItemListEnd
 
-        \resumeSubheading{Pomodojo}{HTML/CSS, JavaScript, Bootstrap, Node.js, Express.js, MongoDB, WebRTC}{\href{https://devpost.com/software/pomodorm}{\underline{Devpost}}}
-            \resumeItemListStart
-                \resumeItem{Developed a study platform to facilitate productive Pomodoro sessions with gamification elements for motivation}
-                \resumeItem{Enabled real-time group video calling with WebRTC and Agora APIs, ensuring seamless, low-latency interaction}
-                % \resumeItem{Used \textbf{MongoDB, Node, and Express} for a scalable backend, managing data persistence and session logistics.}
-            \resumeItemListEnd
+        % \resumeSubheading{Pomodojo}{HTML/CSS, JavaScript, Bootstrap, Node.js, Express.js, MongoDB, WebRTC}{\href{https://devpost.com/software/pomodorm}{\underline{Devpost}}}
+        %     \resumeItemListStart
+        %         \resumeItem{Developed a study platform to facilitate productive Pomodoro sessions with gamification elements for motivation}
+        %         \resumeItem{Enabled real-time group video calling with WebRTC and Agora APIs, ensuring seamless, low-latency interaction}
+        %         % \resumeItem{Used \textbf{MongoDB, Node, and Express} for a scalable backend, managing data persistence and session logistics.}
+        %     \resumeItemListEnd
 
     \resumeSubHeadingListEnd
 
-%-----------PROGRAMMING SKILLS-----------
+% Skills Section
 \section{\textbf{\Large Skills}}
   \begin{itemize}[leftmargin=0.15in, label={}]
     \small{
     \item{
     \textbf{Languages}{: C/C++, Python, Java, C\#, SQL, HTML/CSS, JavaScript, PHP $|$ English, French, Vietnamese} \\
     \textbf{Frameworks \& Databases}{: Flask, Express.js, MySQL, SQLite3, PostgreSQL, Firebase, MongoDB, Neo4J, JUnit, Selenium} \\
-    \textbf{Libraries}{: pandas, NumPy, matplotlib, scikit-learn, unittests, spaCy, Sentence Transformers, BS4, lxml, HuggingFace } \\
+    \textbf{Libraries}{: pandas, NumPy, matplotlib, scikit-learn, unittest, spaCy, Sentence Transformers, BS4, lxml, HuggingFace } \\
     \textbf{Development Tools}{: Git, Node.js, Ubuntu, Qt Creator, Postman, Agile Methodology, SDLC, OOP, TDD, Cucumber} \\
     }}
   \end{itemize}
-%-------------------------------------------
+
 \end{document}
