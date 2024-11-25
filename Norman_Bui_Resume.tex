@@ -1,4 +1,4 @@
-\documentclass[letterpaper,11pt]{article}
+\documentclass[letterpaper,10pt]{article}
 
 %----------------------------------------------------------------------------------------
 %	PACKAGES AND DOCUMENT CONFIGURATIONS
@@ -39,7 +39,7 @@
 \addtolength{\oddsidemargin}{-0.5in}
 \addtolength{\evensidemargin}{-0.5in}
 \addtolength{\textwidth}{1in}
-\addtolength{\topmargin}{-.5in}
+\addtolength{\topmargin}{-0.60in}
 \addtolength{\textheight}{1.0in}
 
 % General Settings
@@ -61,7 +61,7 @@
 % Resume Items
 \newcommand{\resumeItem}[1]{
   \item\small{
-    {#1 \vspace{-3.3pt}}
+    {#1 \vspace{-3.5pt}}
   }
 }
 
@@ -72,7 +72,7 @@
     \item
     \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
       \textbf{#1} $|$ \textit{ #2} & #3 \\
-    \end{tabular*}\vspace{-8.5pt}
+    \end{tabular*}\vspace{-8pt}
 }
 
 \newcommand{\resumeSubSubheading}[2]{
@@ -130,17 +130,17 @@
 % Experience Section
 \section{\textbf{\Large Experience}}
   \resumeSubHeadingListStart
-    \resumeSubheading{Autodesk}{Incoming Software Developer Intern - Java, TypeScript, GraphQL}{Jan 2025}
+    \resumeSubheading{Autodesk}{Incoming Software Developer Intern $|$ Java, TypeScript, GraphQL}{Jan 2025}
         \resumeItemListStart
             \resumeItem{Will be working on cloud-based CAD/CAM development for Autodesk's Fusion platform \textbf{(Winter 2025)}}
     \resumeItemListEnd
 
-    \resumeSubheading{Public Health Agency of Canada}{Junior Data Scientist - Python, LLM, MDM}{Sep 2024 - Present}
+    \resumeSubheading{Public Health Agency of Canada}{Junior Data Scientist $|$ Python, LLM, MDM}{Sep 2024 - Present}
       \resumeItemListStart
         \resumeItem{Developing LLM-powered workflow for epidemiological literature reviews with Imperial College London and WHO as part of master data management system to enable standardized research access for global health initiatives}
       \resumeItemListEnd
 
-    \resumeSubheading{Kongsberg Geospatial}{Software Engineer Intern - C++, Qt, Python, GIS}{May 2024 - Aug 2024}
+    \resumeSubheading{Kongsberg Geospatial}{Software Engineer Intern $|$ C++, Qt, Python, GIS}{May 2024 - Aug 2024}
       \resumeItemListStart
         \resumeItem{Pioneered establishment of Solutions Engineering team as a founding software engineer, developing demos using TerraLens SDK, resulting in successful solution delivery to various major aviation, defence, and government clients}
         \resumeItem{Integrated LiDAR, WMTS, and S-57 data and optimized render pipeline to achieve \textbf{consistent 60+ FPS} with real-time object tracking, while implementing system monitoring (GPU, CPU, RAM) and modernizing Qt UI/UX}
@@ -148,7 +148,7 @@
         \resumeItem{Automated VFR and terrain data processing workflows, reducing aggregating time by more than \textbf{40\%}}
       \resumeItemListEnd
 
-    \resumeSubheading{Health Canada}{Data Scientist Intern - Python, ML, NLP, ETL}{Sep 2023 - Dec 2023}
+    \resumeSubheading{Health Canada}{Data Scientist Intern $|$ Python, ML, NLP, ETL}{Sep 2023 - Dec 2023}
       \resumeItemListStart
         \resumeItem{Developed Python solutions for chemical assessment, leading to improved risk data aggregation and analysis}
         \resumeItem{Built random forest classifiers with pandas, NumPy, SciPy, and scikit-learn to accurately predict chemical toxicity}
@@ -157,14 +157,14 @@
         \resumeItem{Engineered automated knowledge graph pipeline using Neo4j, CoreNLP, and Stanza to extract semantic triples from medical literature, reducing qualitative data processing time and work}
       \resumeItemListEnd
 
-    \resumeSubheading{Department of National Defence}{Junior AI/ML Engineer - Python, LLM, RAG}{Jun 2023 - Nov 2023}
+    \resumeSubheading{Department of National Defence}{Junior AI/ML Engineer $|$ Python, LLM, RAG}{Jun 2023 - Nov 2023}
       \resumeItemListStart
         \resumeItem{Built conversational AI system using GPT-3.5 and Flask, implementing RAG architecture to enable intelligent querying across \textbf{20+ tax documents}}
         \resumeItem{Developed NLP pipeline using NLTK, integrating tokenization, contextual analysis, and NER to enhance text understanding and information extraction accuracy}
-        \resumeItem{Architected vector search system using FAISS and SQLite3, optimizing embedding storage and retrieval for real-time query responses}
+        \resumeItem{Architected vector search system using FAISS and SQLite3, optimizing embedding storage and retrieval for queries}
       \resumeItemListEnd
 
-    \resumeSubheading{NAV CANADA}{Software Engineer Intern - C++, Qt, PowerShell, GIS}{May 2023 - Aug 2023}
+    \resumeSubheading{NAV CANADA}{Software Engineer Intern $|$ C++, Qt, PowerShell, GIS}{May 2023 - Aug 2023}
       \resumeItemListStart
         \resumeItem{Developed C++ solutions for various ATC applications, resulting in improved performance and reliability}
         \resumeItem{Optimized data management algorithm for internal data tool, resulting in a \textbf{60\% decrease} in storage utilization and \textbf{30\% boost} in automated data analysis performance}
@@ -172,14 +172,12 @@
         \resumeItem{Automated network configurations with PowerShell, reducing manual work and setup time by \textbf{more than 95\%}}
       \resumeItemListEnd
 
-    % \resumeSubheading
-    % {Junior Web Developer}{Correctional Service Canada - C\#, .NET, Web, QA}{May 2022 - Apr 2023}
-    %   \resumeItemListStart
-    %     \resumeItem{Improved victim services web application through front-end accessbility testing and bug fixes, increasing user satisfaction for \textbf{over 100 daily users}}
-    %     % \resumeItem{Improved front-end through accessibility testing and fixing bugs for \textbf{over 100 users daily}}
-    %     % \resumeItem{Performed accessbility testing on the front-end and fixed bugs to maintain performance }
-    %     % \resumeItem{Resolved document generation errors in Dynamics 365, \textbf{reducing feature downtime}}
-    %   \resumeItemListEnd
+    \resumeSubheading
+    {Correctional Service Canada}{Junior Web Developer $|$ C\#, .NET, Web Development, QA}{May 2022 - Apr 2023}
+      \resumeItemListStart
+        \resumeItem{Improved web accessibility using the WET framework to ensure WCAG 2.1 Level AA compliance, enhancing UX for \textbf{100+ daily users} in victim services application}
+        % \resumeItem{Resolved document generation errors in Dynamics 365, \textbf{reducing feature downtime}}
+      \resumeItemListEnd
 
     \resumeSubHeadingListEnd
 
@@ -187,26 +185,26 @@
 \section{\textbf{\Large Projects}}
     \resumeSubHeadingListStart
 
-        \resumeSubheading{Obscure Language RAG Systems}{Python, RAG, LangChain, FAISS, Sentence Transformers}{\href{https://github.com/nbui23/factor_assistant}{\includegraphics[height=0.37cm]{logos/github.png}}}
+        \resumeSubheading{Obscure Coding Language RAG Systems}{Python, RAG, LangChain, FAISS, Sentence Transformers}{\href{https://github.com/nbui23/factor_assistant}{\includegraphics[height=0.37cm]{logos/github.png}}}
             \resumeItemListStart
-                \resumeItem{Researched and developed RAG systems to answer obscure programming language queries @ Bedarra Corporation}
+                \resumeItem{Researched and developed RAG systems to answer obscure programming language queries \textbf{@ Bedarra Corporation}}
             \resumeItemListEnd
 
         \resumeSubheading{SocialSaplings}{HTML/SCSS, JavaScript, Bootstrap, Node.js, Express.js, Firebase (Firestore, Auth)}{\href{https://devpost.com/software/socialsaplings}{\includegraphics[height=0.37cm]{logos/devpost.png}}}
             \resumeItemListStart
-                \resumeItem{Led cross-functional team to build a reforestation platform, resulting in \textbf{1st place at KuriusHacks} out of 15 teams}
+                \resumeItem{Led cross-functional team to build a reforestation platform, resulting in \textbf{1st place @ KuriusHacks} out of 15 teams}
                 % \resumeItem{Implemented a tool using GBIF, SoilGrids, Open-Elevation, and OpenWeatherMap to recommend optimal tree species based on a user's geodata.}
                 \resumeItem{Built tree species recommendation algorithm integrating various APIs to analyze user geodata for optimal planting}
                 \resumeItem{Developed an interactive visualization dashboard using the Google Maps API to display real-time reforestation metrics and global environmental impact data}
                 % \resumeItem{Added profiles, posts, likes, and comments, using Firebase for data management and authentication}
             \resumeItemListEnd
 
-        % \resumeSubheading{Pomodojo}{HTML/CSS, JavaScript, Bootstrap, Node.js, Express.js, MongoDB, WebRTC}{\href{https://devpost.com/software/pomodorm}{\underline{Devpost}}}
-        %     \resumeItemListStart
-        %         \resumeItem{Developed a study platform to facilitate productive Pomodoro sessions with gamification elements for motivation}
-        %         \resumeItem{Enabled real-time group video calling with WebRTC and Agora APIs, ensuring seamless, low-latency interaction}
-        %         % \resumeItem{Used \textbf{MongoDB, Node, and Express} for a scalable backend, managing data persistence and session logistics.}
-        %     \resumeItemListEnd
+        \resumeSubheading{Pomodojo}{HTML/CSS, JavaScript, Bootstrap, Node.js, Express.js, MongoDB, WebRTC}{\href{https://devpost.com/software/pomodorm}{\includegraphics[height=0.37cm]{logos/devpost.png}}}
+            \resumeItemListStart
+                \resumeItem{Designed a study platform to facilitate productive Pomodoro sessions with gamification elements for motivation \textbf{@ uOttaHack6}}
+                \resumeItem{Integrated WebRTC and Agora APIs to enable multi-user video conferencing capabilities, ensuring stable real-time communication for up to 10 concurrent users with \textbf{sub-100ms latency}}
+                \resumeItem{Developed MongoDB database architecture and RESTful APIs to manage user sessions, study metrics, and platform functionality}
+            \resumeItemListEnd
 
     \resumeSubHeadingListEnd
 
